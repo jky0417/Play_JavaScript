@@ -1,33 +1,43 @@
 body {
-    background-color: rosybrown;
-}
-
-.btn {
+    background-color: rgb(155, 140, 126);
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
+    opacity: 0.9;
+    text-shadow: rgb(221, 99, 99) 1px 0 10px;
+  }
+  
+  .btn {
     cursor: pointer;
-}
+  }
 
-h1 {
-    color: royalblue;
-}
+  h1 {
+    color: rgb(145, 236, 157);
+    transition: color 0.5s ease-in-out;
+  }
+  
+  .clicked {
+    color: rgb(222, 26, 20);
+  }
 
-.form,
-.greetings {
+  .form,
+  .greetings{
     display: none;
-}
+  }
 
-.showing {
+  .showing {
     display: block;
-}
+  }
 
-@keyframes fadeIn {
+  @keyframes fadeIn{
     from {
-        opacity: 0;
-    } to {
-        opacity: 1;
+      opacity: 0;
     }
-}
+    to {
+      opacity: 1;
+    }
+  }
 
-.bgImage{
+  .bgImage{
     position: absolute;
     top: 0;
     left: 0;
@@ -35,4 +45,99 @@ h1 {
     height: 100%;
     z-index: -1;
     animation: fadeIn 0.5s linear;
-}
+  }
+
+  .weather {
+    position: absolute;
+    left: 85%;
+    bottom: 85%;
+    color: rgb(145, 236, 157);
+    font-weight: bold;
+    font-size: xxx-large;
+  }
+  
+  .general {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    display: blcok;
+  }
+
+  .btn, .btn2 {
+    text-align: left;
+    border-radius: 10px;
+    border-style: outset;
+    background: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Nanum Pen Script', cursive;
+    text-shadow: rgb(221, 99, 99) 1px 0 10px;
+
+  }
+  .js-clock{
+    text-align: center;
+    font-size: 60px;
+    text-shadow: rgb(221, 99, 99) 1px 0 10px;
+    position: fixed;
+    margin: 0;
+    top: 10%;
+    left: 40%;
+  } 
+  .js-form form, h4 {
+      text-align: center;
+      font-size: 40px;
+      text-shadow: rgb(221, 99, 99) 1px 0 10px;
+  }
+
+  .CH_hours, .hidden, .hide {
+    visibility: hidden;
+  }
+  .show {
+    visibility: visible;
+    position: relative;
+    bottom: 200px;
+  }
+
+  .view {
+    visibility: visible;
+  }
+
+  .showing,
+  .js-toDoForm {
+    text-align: center;
+
+  }
+
+  li{
+    text-align: left;
+    list-style: none;
+  }
+
+  .js-form input,
+  .js-toDoForm input {
+    width: 300px;
+    height: 50px;
+    border: 4px solid white;
+    border-radius: 10px;
+    border-style: outset;
+    margin-top: 20px;
+    background: none;
+  }
+
+  .js-toDoList {
+    font-size: 20px;
+  }
+
+  input::placeholder{
+      color: white;
+      font-size: 30px;
+      font-family: 'Nanum Pen Script', cursive;
+      text-shadow: rgb(221, 99, 99) 1px 0 10px;
+  }
+
+  input{
+    color: white;
+    font-size: 30px;
+    font-family: 'Nanum Pen Script', cursive;
+    text-shadow: rgb(221, 99, 99) 1px 0 10px;
+  }
