@@ -25,18 +25,22 @@ function paintToDo(text){
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
     const span = document.createElement("span");
-    const newId = toDos.length;
-    const uniqueId = newId + 1;
+    
+    // Id를 Date.now로 현재 시각으로 설정. 겹치지 않도록.
+    const newId = Date.now();
+    
+    // const newId = toDos.length;
+    // const uniqueId = newId + 1;
     delBtn.innerText = "❌";
     delBtn.addEventListener("click", deleteToDo);
     span.innerText = text;
     li.appendChild(delBtn);
     li.appendChild(span);
-    li.id = uniqueId;
+    li.id = newId;
     toDoList.appendChild(li);
     const toDoObj = {
         text: text,
-        id: uniqueId
+        id: newId
     };
     toDos.push(toDoObj);
     saveToDos();
