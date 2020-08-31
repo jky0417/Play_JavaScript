@@ -2,11 +2,12 @@ const body = document.querySelector("body");
 
 const IMG_NUMBER = 5;
 
+// 랜덤 배경 API
 function paintImage(imgNumber){
     const image = new Image();
-    image.src = `images/${imgNumber + 1}.jpg`;
+    image.src = `https://source.unsplash.com/random/1920x680`;
     image.classList.add("bgImage");
-    body.appendChild(image);
+    body.prepend(image);
 }
 
 function genRandom(){
@@ -14,7 +15,7 @@ function genRandom(){
     return number;
 }
 
-function init() {
+function init(){
     const randomNumber = genRandom();
     paintImage(randomNumber);
 }
