@@ -1,41 +1,29 @@
-<DOCTYPE html>
-    <html>
-      <head>
-        
-        <!-- JQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-        <title>Something</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="index.css" />
-      </head>
-      <body> 
-        <!-- 시간, toDo 묶음 div -->
-        <div class="general">
-          <div class="js-clock">
-            <h1>00:00</h1><button type="button" class="btn">✅AM/PM</button>
-          </div>
-          <form class="js-form form">
-            <input type="text" placeholder="What is your name?" />
-          </form>
-          <h4 class="js-grettings greetings"></h4>
-          <form class="js-toDoForm">
-            <input type="text" placeholder="Write a to-do" />
-          </form>
-          <ul class="js-toDoList">
-          </ul>
-        </div>
-        <!-- 날씨 -->
-        <div class="weather">
-            <img src="" class="weatherIcon" />
-            <span class="js-weather"></span>
-        </div>
-
-        <script src="clock.js"></script>
-        <script src="greetings.js"></script>
-        <script src="todo.js"></script>
-        <script src="bg.js"></script>
-        <script src="weather.js"></script>
-      </body>
-    </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="js-clock">
+        <h1>00:00</h1>
+    </div>
+    <form class="js-form form">
+        <input type="text" placeholder="What is your Name?" />
+    </form>
+    <h4 class="js-greetings greetings"></h4>
+    <form class="js-toDoForm">
+        <input type="text" placeholder="Writer a To-Do" />
+    </form>
+        <ul class="js-toDoList">
+        </ul>
+    <span class="js-weather"></span>
+    <script src="clock.js"></script>
+    <script src="greetings.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
