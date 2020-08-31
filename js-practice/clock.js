@@ -2,8 +2,6 @@ const clockContainer = document.querySelector(".js-clock"),
     clockTitle = clockContainer.querySelector("h1"),
     btn = document.querySelector(".btn");
 
-    var clear;
-
 function changeFormat(event){
     let date = new Date();
     let hours = date.getHours();
@@ -30,16 +28,14 @@ function changeFormat(event){
         minutes < 10 ? `0${minutes}` : minutes
     }:${seconds < 10 ? `0${seconds}` : seconds}`
 
-    clear = setInterval(getTime, 1000);
+    setInterval(getTime, 1000);
     // setInterval(getTime, 1000);
     // 버튼 클릭 이벤트 추가
-    // btn.addEventListener("click", changeFormat);
-    
+    btn.addEventListener("click", changeFormat);
  }
 
 function init() {
     getTime();
-    btn.addEventListener("click", changeFormat);
 }
 
 init();
