@@ -5,18 +5,10 @@ body {
     opacity: 0.9;
     text-shadow: rgb(221, 99, 99) 1px 0 10px;
   }
-  
-  .btn {
-    cursor: pointer;
-  }
 
   h1 {
     color: rgb(145, 236, 157);
     transition: color 0.5s ease-in-out;
-  }
-  
-  .clicked {
-    color: rgb(222, 26, 20);
   }
 
   .form,
@@ -63,7 +55,7 @@ body {
     display: blcok;
   }
 
-  .btn, .btn2 {
+  .btn {
     text-align: left;
     border-radius: 10px;
     border-style: outset;
@@ -72,8 +64,8 @@ body {
     font-size: 20px;
     font-family: 'Nanum Pen Script', cursive;
     text-shadow: rgb(221, 99, 99) 1px 0 10px;
-
   }
+
   .js-clock{
     text-align: center;
     font-size: 60px;
@@ -89,17 +81,13 @@ body {
       text-shadow: rgb(221, 99, 99) 1px 0 10px;
   }
 
-  .CH_hours, .hidden, .hide {
+  .CH_hours, .hide {
     visibility: hidden;
   }
   .show {
     visibility: visible;
     position: relative;
     bottom: 200px;
-  }
-
-  .view {
-    visibility: visible;
   }
 
   .showing,
